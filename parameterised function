@@ -1,0 +1,19 @@
+#Define and call a parameterised function with return value
+def operation(x,y):
+    add=x+y
+    sub=x-y
+    multi=x*y
+    div=x/y
+    mod=x%y
+    return(add,sub,multi,div,mod)
+
+#call operation function
+x=int(input("Enter a first number:"))
+y=int(input("Enter a second number:"))
+a,s,m,d,mo=operation(x,y)
+print("argument passed to the given function are",x,y)
+print("Addition of given argrments is",a)
+print("Substraction of given arguments is",s)
+print("Multipication of given arguments is",m)
+print("Division of given arguments is",d)
+print("Remainder of 20/10is",mo)
